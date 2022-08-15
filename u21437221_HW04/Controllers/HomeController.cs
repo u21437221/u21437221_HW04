@@ -12,5 +12,20 @@ namespace u21437221_HW04.Controllers
         {
             return View();
         }
+
+        public ActionResult NGOApply()
+        {
+            return View();
+        }
+
+        public ActionResult Donation()
+        {
+            return View();
+        }
+
+        public ActionResult Treatment()
+        {
+            return View();
+        }
     }
 }
