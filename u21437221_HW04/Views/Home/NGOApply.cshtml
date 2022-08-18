@@ -5,14 +5,34 @@
 
 <h2>NGOApply</h2>
 
-<div class="form-group">
-    <label for="name">Enter First Name:</label>
-    <input type="text" id="name" name="firstName" /> </br>
-    <label for="surname">Enter Surname:</label>
-    <input type="text" id="surname" name="surname" /> </br>
-    <label for="idNumber">Enter ID Number:</label>
-    <input type="text" id="idNumber" name="idNumber" /> </br>
-    <label for="cellNumber">Enter Cellphone number:</label>
-    <input type="number" id="cellNumber" name="cellNumber" /> </br>
+@using (Html.BeginForm("NGOApply", "Home", FormMethod.Post))
+{
+    <div class="form-group">
+        <label for="name">Enter First Name:</label>
+        <input type="text" id="name" name="firstName" /> @*</br>*@
+    </div>
+    <div class="form-group">
+        <label for="surname">Enter Surname:</label>
+        <input type="text" id="surname" name="surname" />
+    </div>
+    <div class="form-group">
+        <label for="idNumber">Enter ID Number:</label>
+        <input type="text" id="idNumber" name="idNumber" />
+    </div>
+    <div class="form-group">
+        <label for="cellNumber">Enter Cellphone number:</label>
+        <input type="number" id="cellNumber" name="cellNumber" />
+    </div>
+    <div class="form-group">
+        <label for="age">Enter your age:</label>
+        <input type="number" id="age" name="age" />
+    </div>
+    <div class="form-group">
+        <label for="jobType">Select the job you would like to apply for:</label>
+        <select class="form-control" id="jobType" name="jobType">
+            <option value="1">Admin(Office job)</option>
+            <option value="2">Practical(Helping those that need help)</option>
+        </select>
+    </div>
     <button type="submit" class="btn btn-primary">Submit</button>
-</div>
+}

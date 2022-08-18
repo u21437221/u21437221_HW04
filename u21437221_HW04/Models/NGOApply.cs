@@ -9,7 +9,7 @@ namespace u21437221_HW04.Models
     {
         public string JobType { get; set; }
 
-        public NGOApply(string name, string surname, string idNumber, int age, string jobType): base(name,surname,idNumber,age)
+        public NGOApply(string name, string surname, string idNumber, int cellNumber, int age, string jobType): base(name,surname,idNumber, cellNumber,age)
         {
             JobType = jobType;
         }

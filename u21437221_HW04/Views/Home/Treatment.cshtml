@@ -5,19 +5,35 @@
 
 <h2>Treatment</h2>
 
+@using (Html.BeginForm("Treatment", "Home", FormMethod.Post))
+{
 <div class="form-group">
     <label for="name">Enter First Name:</label>
-    <input type="text" id="name" name="firstName" /> </br>
+    <input type="text" id="name" name="firstName" /> @*</br>*@
+</div>
+<div class="form-group">
     <label for="surname">Enter Surname:</label>
-    <input type="text" id="surname" name="surname" /> </br>
+    <input type="text" id="surname" name="surname" />
+</div>
+<div class="form-group">
     <label for="idNumber">Enter ID Number:</label>
-    <input type="text" id="idNumber" name="idNumber" /> </br>
+    <input type="text" id="idNumber" name="idNumber" />
+</div>
+<div class="form-group">
     <label for="cellNumber">Enter Cellphone number:</label>
-    <input type="number" id="cellNumber" name="cellNumber" /> </br>
+    <input type="number" id="cellNumber" name="cellNumber" />
+</div>
+<div class="form-group">
+    <label for="age">Enter your age:</label>
+    <input type="number" id="age" name="age" />
+</div>
+<div class="form-group">
     <label for="treatmentType">Select the treatment:</label>
     <select class="form-control" id="treatmentType" name="treatmentType">
         <option value="1">Vaccination</option>
         <option value="2">STD</option>
-    </select> </br>
-    <button type="submit" class="btn btn-primary">Submit</button>
+        <option value="3">Surgery</option>
+    </select>
 </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+}

@@ -10,13 +10,19 @@ namespace u21437221_HW04.Models
         public string Name { get; set; }
         public string Surname { get; set; }
         public string IDNumber { get; set; }
+        public int CellNumber { get; set; }
         public int Age { get; set; }
 
-        public PersonalInfo(string name, string surname, string idNumber, int age)
+        public PersonalInfo()
+        {
+
+        }
+        public PersonalInfo(string name, string surname, string idNumber, int cellNumber, int age)
         {
             Name = name;
             Surname = surname;
             IDNumber = idNumber;
+            CellNumber = cellNumber;
             Age = age;
         }
     }

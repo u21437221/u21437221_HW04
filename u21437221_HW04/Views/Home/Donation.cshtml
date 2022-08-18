@@ -5,14 +5,31 @@
 
 <h2>Donation</h2>
 
-<div class="form-group">
-    <label for="name">Enter First Name:</label>
-    <input type="text" id="name" name="firstName" /> </br>
-    <label for="surname">Enter Surname:</label>
-    <input type="text" id="surname" name="surname" /> </br>
-    <label for="idNumber">Enter ID Number:</label>
-    <input type="text" id="idNumber" name="idNumber" /> </br>
-    <label for="cellNumber">Enter Cellphone number:</label>
-    <input type="number" id="cellNumber" name="cellNumber" /> </br>
+@using (Html.BeginForm("Donation", "Home", FormMethod.Post))
+{
+    <div class="form-group">
+        <label for="name">Enter First Name:</label>
+        <input type="text" id="name" name="firstName" /> @*</br>*@
+    </div>
+    <div class="form-group">
+        <label for="surname">Enter Surname:</label>
+        <input type="text" id="surname" name="surname" />
+    </div>
+    <div class="form-group">
+        <label for="idNumber">Enter ID Number:</label>
+        <input type="text" id="idNumber" name="idNumber" />
+    </div>
+    <div class="form-group">
+        <label for="cellNumber">Enter Cellphone number:</label>
+        <input type="number" id="cellNumber" name="cellNumber" />
+    </div>
+    <div class="form-group">
+        <label for="age">Enter your age:</label>
+        <input type="number" id="age" name="age" />
+    </div>
+    <div class="form-group">
+        <label for="donateAmount">Enter the amount you would like to donate:</label>
+        <input type="number" id="donateAmount" name="donateAmount" />
+    </div>
     <button type="submit" class="btn btn-primary">Submit</button>
-</div>
+}
