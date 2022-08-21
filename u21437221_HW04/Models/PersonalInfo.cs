@@ -30,7 +30,7 @@ namespace u21437221_HW04.Models
 
         public virtual string GetSummary()
         {
-            return "Name:" + Name + "Surname:" + Surname + "ID Number:" + IDNumber + "Cell Phone Number:" + CellNumber + "Age:" + Age;
+            return "Name:" + Name + " " + "Surname:" + Surname + " " + "ID Number:" + IDNumber + " " + "Cell Phone Number:" + CellNumber + " " + "Age:" + Age;
         }
     }
 }

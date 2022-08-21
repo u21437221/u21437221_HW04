@@ -1,0 +1,19 @@
+﻿@model IEnumerable<u21437221_HW04.Models.PersonalInfo>
+
+    @{
+        ViewBag.Title = "Display";
+    }
+
+<div class="jumbotron">
+   <h2>Display what the users have entered</h2>
+</div>
+
+<img src="~/Images/Logo.png" class="img-fluid" alt="..."/>
+
+@foreach (var info in Model)
+ {
+    <div class="row">
+        <h5>@info.GetSummary()</h5>
+    </div>
+ }
+

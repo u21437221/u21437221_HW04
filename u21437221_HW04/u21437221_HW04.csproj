@@ -167,9 +167,12 @@
     <Content Include="Views\Home\NGOApply.cshtml" />
     <Content Include="Views\Home\Donation.cshtml" />
     <Content Include="Views\Home\Treatment.cshtml" />
+    <Content Include="Views\Home\Display.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

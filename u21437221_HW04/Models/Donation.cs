@@ -16,7 +16,7 @@ namespace u21437221_HW04.Models
 
         public override string GetSummary()
         {
-            return base.GetSummary() + "Donation amount:" + DonateAmount;
+            return base.GetSummary() + " " + "Donation amount:" + DonateAmount;
         }
 
         public override string endMessage()

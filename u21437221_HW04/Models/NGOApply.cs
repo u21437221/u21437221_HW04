@@ -16,7 +16,7 @@ namespace u21437221_HW04.Models
 
         public override string GetSummary()
         {
-            return base.GetSummary() + "Job Type:" + JobType;
+            return base.GetSummary() + " " + "Job Type:" + JobType;
         }
 
         public override string endMessage()

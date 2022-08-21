@@ -16,7 +16,7 @@ namespace u21437221_HW04.Models
 
         public override string GetSummary()
         {
-            return base.GetSummary() + "Treatment:" + TreatmentType;
+            return base.GetSummary() + " " + "Treatment:" + TreatmentType;
         }
 
         public override string endMessage()

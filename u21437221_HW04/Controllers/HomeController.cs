@@ -28,13 +28,13 @@ namespace u21437221_HW04.Controllers
             if (jobType == 1)
             {
                 NGOApply newApply = (NGOApply)newPerson;
-                newApply = new NGOApply(name, surname, idNumber, cellNumber, age, jobType.ToString());
+                newApply = new NGOApply(name, surname, idNumber, cellNumber, age, "Admin(Office job)");
                 personalInfos.Add(newApply);
             }
             if (jobType == 2)
             {
                 NGOApply newApply = (NGOApply)newPerson;
-                newApply = new NGOApply(name, surname, idNumber, cellNumber, age, jobType.ToString());
+                newApply = new NGOApply(name, surname, idNumber, cellNumber, age, "Practical(Helping those that need help)");
                 personalInfos.Add(newApply);
             }
             return View();
@@ -69,22 +69,32 @@ namespace u21437221_HW04.Controllers
             if (treatmentType == 1)
             {
                 Treatment newTreatment = (Treatment)newPerson;
-                newTreatment = new Treatment(name, surname, idNumber, cellNumber, age, treatmentType.ToString());
+                newTreatment = new Treatment(name, surname, idNumber, cellNumber, age, "Vaccination");
                 personalInfos.Add(newTreatment);
             }
             if (treatmentType == 2)
             {
                 Treatment newTreatment = (Treatment)newPerson;
-                newTreatment = new Treatment(name, surname, idNumber, cellNumber, age, treatmentType.ToString());
+                newTreatment = new Treatment(name, surname, idNumber, cellNumber, age, "STD");
                 personalInfos.Add(newTreatment);
             }
             if (treatmentType == 3)
             {
                 Treatment newTreatment = (Treatment)newPerson;
-                newTreatment = new Treatment(name, surname, idNumber, cellNumber, age, treatmentType.ToString());
+                newTreatment = new Treatment(name, surname, idNumber, cellNumber, age, "Surgery");
                 personalInfos.Add(newTreatment);
             }
 
+            return View();
+        }
+
+        public ActionResult Display()
+        {
+            return View(personalInfos);
+        }
+
+        public ActionResult About()
+        {
             return View();
         }
     }
