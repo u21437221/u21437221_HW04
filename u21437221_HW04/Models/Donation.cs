@@ -13,5 +13,15 @@ namespace u21437221_HW04.Models
         {
             DonateAmount = donateAmount;
         }
+
+        public override string GetSummary()
+        {
+            return base.GetSummary() + "Donation amount:" + DonateAmount;
+        }
+
+        public override string endMessage()
+        {
+            return Name + Surname + "thank you for donating R" + DonateAmount.ToString();
+        }
     }
 }

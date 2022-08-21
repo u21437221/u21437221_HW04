@@ -13,5 +13,15 @@ namespace u21437221_HW04.Models
         {
             TreatmentType = treatmentType;
         }
+
+        public override string GetSummary()
+        {
+            return base.GetSummary() + "Treatment:" + TreatmentType;
+        }
+
+        public override string endMessage()
+        {
+            return Name + Surname + "thank you for applying for a treatment:" + TreatmentType;
+        }
     }
 }

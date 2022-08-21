@@ -13,5 +13,15 @@ namespace u21437221_HW04.Models
         {
             JobType = jobType;
         }
+
+        public override string GetSummary()
+        {
+            return base.GetSummary() + "Job Type:" + JobType;
+        }
+
+        public override string endMessage()
+        {
+            return Name + Surname + "thank you for applying for a job at the NGO: " + JobType;
+        }
     }
 }
